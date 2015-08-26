@@ -1,0 +1,26 @@
+-- https://www.digitalocean.com/community/tutorials/how-to-customize-the-postgresql-prompt-with-psqlrc-on-ubuntu-14-04
+-- http://www.craigkerstiens.com/2013/02/21/more-out-of-psql/
+-- https://github.com/kylpo/dot-files/blob/master/psqlrc
+-- http://www.if-not-true-then-false.com/2009/postgresql-psql-psqlrc-tips-and-tricks/
+-- http://michael.otacoo.com/postgresql-2/postgres-devel-some-psql-tricks/
+-- http://www.postgresql.org/docs/9.4/static/app-psql.html
+
+-- ·············································································
+
+-- \set PROMPT1 '%M:%> %n@%/%R%#%x '
+
+-- \set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+
+-- ·············································································
+
+-- \pset null 'NULL'
+-- \set HISTFILE ~/.psql_history- :HOST - :DBNAME
+-- \set HISTSIZE 2000
+-- \timing
+-- \set PROMPT1 '(%n@%M:%>) [%/] > '
+-- \set PROMPT2 ''
+-- \encoding unicode
+
+-- ·············································································
+
+\set PROMPT1 '%[%033[1;33;40m%]%n@%/%R%[%033[0m%]%# '
